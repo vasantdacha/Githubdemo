@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: ACCELQ CI
 
 # Controls when the workflow will run
 on:
@@ -30,7 +30,7 @@ jobs:
     # Your ACCELQ Application URL in the exact following format: https://<hostname>:<port_num>
           appURL: https://poc.accelq.io
     # Your ACCELQ User ID
-          userName: vasantd@accelq.io
+          userName: vasantd@accelq.com
     # API key available in Profile section of ACCELQ
           apiKey: LngCDlxtNDYu_hA1CXvWZiLFh9bwJBF49VYH1f0fsPc
     # Tenant Code displayed in the Profile section of ACCELQ
