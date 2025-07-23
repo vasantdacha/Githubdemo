@@ -1,0 +1,26 @@
+            - name: ACCELQ Github-A Connect
+  # You may pin to the exact commit or the version.
+  # uses: accelQ-Inc/accelq-ci-github-actions@2686194162077054ea3d1f227dc8fb8b0d2eb3d5
+  uses: accelQ-Inc/accelq-ci-github-actions@v1.4
+  with:
+  runs-on: windows-latest
+    # Your ACCELQ Application URL in the exact following format: https://<hostname>:<port_num>
+    appURL: https://poc.accelq.io
+    # Your ACCELQ User ID
+    userName: vasantd@accelq.com
+    # API key available in Profile section of ACCELQ
+    apiKey: LngCDlxtNDYu_hA1CXvWZiLFh9bwJBF49VYH1f0fsPc
+    # Tenant Code displayed in the Profile section of ACCELQ
+    tenantCode: poc25
+    # This ID should come from the CI job you saved in ACCELQ application
+    jobId: 481551
+    # Run Params(optional) should be JSON string form example: '{"username": "John Todd", "password": "bxW&=UVw"}'
+    runParam: # optional
+    # Proxy Host (optional)
+    proxyHost: # optional
+    # Proxy Port (optional)
+    proxyPort: # optional
+    # Percentage ACCELQ test case failure (Optional), beyond which this Step in the Pipeline will be marked as a failure. If this is zero, even a single failed test will cause the Step to fail. If you never want to fail the Pipeline Step due to failing Automation tests, input -1. Input a valid integer between 0 and 100 or, -1.
+    stepFailureThreshold: # optional
+    # Maximum time to wait for the job to be picked up by an ACCELQ Agent. Default is 15 mins.
+    maxWaitTimeInMins: # optional
